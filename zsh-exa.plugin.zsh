@@ -1,0 +1,6 @@
+alias ls='exa --color-scale --icons --group-directories-first --time-style=long-iso'
+alias l='ls -lbF'
+alias la='ls -lbhigUma'
+alias ll='ls -lbhgUm'
+alias llm='ll --sort=modified'
+alias tree='exa --tree'
