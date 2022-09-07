@@ -3,11 +3,9 @@ if ! (( $+commands[exa] )); then
   return 1
 fi
 
-alias ls='exa -a --icons --git --group-directories-first --time-style=long-iso'
-alias lz='exa --icons --git --group-directories-first --time-style=long-iso'
+alias ls='exa --color-scale --icons --group-directories-first --time-style=long-iso'
 alias l='ls -lbF'
-alias ll='ls -la'
+alias la='ls -lbhigUma'
+alias ll='ls -lbhgUm'
 alias llm='ll --sort=modified'
-alias la='ls -lbhHigUmuSa'
-alias lx='ls -lbhHigUmuSa@'
 alias tree='exa --tree'
